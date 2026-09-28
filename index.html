@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Obur — Güneş Sistemi ve Ötesi</title>
+    <meta
+        name="description"
+        content="7. Sınıf Fen Bilimleri Güneş Sistemi ve Ötesi interaktif öğrenme deneyimi."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="intro-active">
+
+    <!-- =====================================================
+         INTRO
+    ====================================================== -->
+    <div class="intro" id="intro">
+
+        <video
+            id="introVideo"
+            class="intro-video"
+            src="assets/startscreen.mp4"
+            autoplay
+            muted
+            playsinline
+            preload="auto"
+        ></video>
+
+        <div class="intro-overlay"></div>
+
+        <div class="intro-logo" id="introLogo">
+            <svg viewBox="0 0 500 180" aria-label="Obur">
+                <text
+                    x="50%"
+                    y="63%"
+                    text-anchor="middle"
+                    class="logo-svg-text"
+                >
+                    Obur
+                </text>
+            </svg>
+        </div>
+
+        <div class="intro-loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <button
+            class="skip-intro"
+            id="skipIntro"
+            type="button"
+        >
+            ESC · Geç
+        </button>
+    </div>
+
+
+    <!-- =====================================================
+         MAIN APPLICATION
+    ====================================================== -->
+    <main id="page">
+
+        <!-- =================================================
+             NAVBAR
+        ================================================== -->
+        <header class="navbar">
+
+            <a href="#kesif" class="brand">
+                <span class="orbit-logo">
+                    <span></span>
+                </span>
+
+                <span class="brand-text">Obur</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#kesif">Keşfet</a>
+                <a href="#uzay-teknolojileri">Teknoloji</a>
+                <a href="#gok-cisimleri">Gök Cisimleri</a>
+                <a href="#galaksiler">Galaksiler</a>
+                <a href="#quiz">Atölye</a>
+            </nav>
+
+            <a href="#quiz" class="nav-cta">
+                Derse Başla
+                <span>↗</span>
+            </a>
+
+            <button
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+                aria-label="Menüyü aç"
+                type="button"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </header>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#kesif">Keşfet</a>
+            <a href="#uzay-teknolojileri">Teknoloji</a>
+            <a href="#gok-cisimleri">Gök Cisimleri</a>
+            <a href="#galaksiler">Galaksiler</a>
+            <a href="#quiz">Atölye</a>
+        </div>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+        <section class="hero section-container" id="kesif">
+
+            <div class="hero-copy">
+
+                <div class="eyebrow">
+                    <span class="pulse-dot"></span>
+                    07 · FEN BİLİMLERİ
+                </div>
+
+                <h1>
+                    Uzayın
+                    <span>Derinlikleri</span>
+                </h1>
+
+                <p class="hero-description">
+                    Güneş Sistemi'nden galaksilere, yıldızlardan
+                    kara deliklere kadar evrenin büyüleyici
+                    dünyasını keşfet.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#gok-cisimleri" class="button primary-button">
+                        Keşfe Başla
+                        <span>↓</span>
+                    </a>
+
+                    <a href="#uzay-teknolojileri" class="button glass-button">
+                        Uzay Teknolojileri
+                    </a>
+
+                </div>
+
+                <div class="hero-meta">
+                    <span>●</span>
+                    7. Sınıf · Güneş Sistemi ve Ötesi
+                </div>
+
+            </div>
+
+
+            <!-- BENTO -->
+            <div class="bento-grid">
+
+                <!-- CARD 1 -->
+                <article
+                    class="bento-card bento-large tilt-card"
+                    id="uzay-arastirmalari"
+                >
+
+                    <img
+                        src="assets/jameswebb.jpg"
+                        alt="James Webb Uzay Teleskobu"
+                        loading="eager"
+                    >
+
+                    <div class="bento-gradient"></div>
+
+                    <div class="bento-content">
+
+                        <span class="card-label">
+                            01 · ARAŞTIRMA
+                        </span>
+
+                        <h2>Uzay Araştırmaları</h2>
+
+                        <p>
+                            Teleskoplar ve uzay araçları sayesinde
+                            evrenin milyarlarca ışık yılı uzağındaki
+                            bölgelerini inceleyebiliyoruz.
+                        </p>
+
+                        <div class="card-footer">
+                            <span>James Webb</span>
+                            <span class="round-arrow">↗</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 2 -->
+                <article class="bento-card bento-nebula tilt-card">
+
+                    <img
+                        src="assets/nebula.jpg"
+                        alt="Bulutsu ve yıldız oluşumu"
+                        loading="lazy"
+                    >
+
+                    <div class="bento-gradient"></div>
+
+                    <div class="bento-content">
+
+                        <span class="card-label">
+                            02 · YILDIZLAR
+                        </span>
+
+                        <h2>Yıldız Yaşamı</h2>
+
+                        <p>
+                            Yıldızlar doğar, gelişir ve yaşamlarının
+                            sonunda farklı şekillerde dönüşür.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 3 -->
+                <article class="bento-card pollution-card tilt-card">
+
+                    <div class="star-field"></div>
+
+                    <div class="pollution-icon">
+                        ◌
+                    </div>
+
+                    <div class="bento-content">
+
+                        <span class="card-label">
+                            03 · ÇEVRE
+                        </span>
+
+                        <h2>Uzay Kirliliği</h2>
+
+                        <p>
+                            Kullanılmayan uydu ve roket parçaları
+                            Dünya'nın çevresinde uzay çöplüğü oluşturur.
+                        </p>
+
+                        <div class="pollution-footer">
+                            <strong>◇</strong>
+                            Uzayı koruyalım
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TECHNOLOGY
+        ================================================== -->
+        <section
+            class="technology section-container"
+            id="uzay-teknolojileri"
+        >
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-kicker">
+                        01 — UZAY TEKNOLOJİLERİ
+                    </span>
+
+                    <h2>
+                        Uzaya Açılan
+                        <span>Kapılar</span>
+                    </h2>
+                </div>
+
+                <p>
+                    İnsanlar uzayı incelemek için uydular,
+                    uzay araçları, roketler ve gelişmiş
+                    teleskoplar kullanır.
+                </p>
+
+            </div>
+
+
+            <div class="technology-layout">
+
+                <!-- Satellite Panel -->
+                <article class="tech-panel satellite-panel">
+
+                    <div class="panel-top">
+                        <div>
+                            <span class="panel-kicker">TÜRKİYE</span>
+                            <h3>Uydularımız</h3>
+                        </div>
+
+                        <span class="panel-icon">◉</span>
+                    </div>
+
+                    <p>
+                        Türkiye'nin haberleşme, gözlem ve
+                        araştırma amacıyla geliştirdiği uydular.
+                    </p>
+
+                    <div class="satellite-groups">
+
+                        <div class="satellite-group">
+                            <span class="group-title active-title">
+                                AKTİF
+                            </span>
+
+                            <div class="tag-list">
+                                <span class="sat-tag active">
+                                    Türksat 5A
+                                </span>
+
+                                <span class="sat-tag active">
+                                    Türksat 5B
+                                </span>
+
+                                <span class="sat-tag active">
+                                    Türksat 6A
+                                </span>
+
+                                <span class="sat-tag active">
+                                    Göktürk-1
+                                </span>
+
+                                <span class="sat-tag active">
+                                    Göktürk-2
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="satellite-group">
+                            <span class="group-title">
+                                PASİF
+                            </span>
+
+                            <div class="tag-list">
+                                <span class="sat-tag">
+                                    RASAT
+                                </span>
+
+                                <span class="sat-tag">
+                                    BİLSAT
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Space Vehicles -->
+                <article class="tech-panel">
+
+                    <div class="panel-top">
+                        <div>
+                            <span class="panel-kicker">ARAÇLAR</span>
+                            <h3>Uzay Araçları</h3>
+                        </div>
+
+                        <span class="panel-icon">✦</span>
+                    </div>
+
+                    <div class="tech-list">
+
+                        <div class="tech-item">
+                            <div class="tech-symbol">⌁</div>
+
+                            <div>
+                                <strong>ISS</strong>
+                                <span>
+                                    Uluslararası Uzay İstasyonu
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="tech-item">
+                            <div class="tech-symbol">→</div>
+
+                            <div>
+                                <strong>Sondalar</strong>
+                                <span>
+                                    Uzak gök cisimlerini araştırır
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="tech-item">
+                            <div class="tech-symbol">▲</div>
+
+                            <div>
+                                <strong>Roketler</strong>
+                                <span>
+                                    Uzay araçlarını taşır
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Telescopes -->
+                <article class="tech-panel telescope-panel">
+
+                    <div class="panel-top">
+                        <div>
+                            <span class="panel-kicker">GÖZLEMLEME</span>
+                            <h3>Teleskoplar</h3>
+                        </div>
+
+                        <span class="panel-icon">⊙</span>
+                    </div>
+
+                    <div class="telescope-list">
+
+                        <div class="telescope-item">
+                            <span class="telescope-number">01</span>
+
+                            <div>
+                                <strong>James Webb</strong>
+                                <span>
+                                    Kızılötesi gözlemler
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="telescope-item">
+                            <span class="telescope-number">02</span>
+
+                            <div>
+                                <strong>Hubble</strong>
+                                <span>
+                                    Uzaydan gözlem
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CELESTIAL OBJECTS
+        ================================================== -->
+        <section
+            class="celestial-section"
+            id="gok-cisimleri"
+        >
+
+            <div class="section-container">
+
+                <div class="section-heading celestial-heading">
+
+                    <div>
+                        <span class="section-kicker">
+                            02 — GÖK CİSİMLERİ
+                        </span>
+
+                        <h2>
+                            Kozmik
+                            <span>Yolculuk</span>
+                        </h2>
+                    </div>
+
+                    <p>
+                        Güneşimizden dev kara deliklere kadar
+                        evrenin farklı yapılarını incele.
+                    </p>
+
+                </div>
+
+
+                <div class="cosmic-stack">
+
+                    <!-- SUN -->
+                    <article class="cosmic-card">
+
+                        <div class="cosmic-image">
+                            <img
+                                src="assets/sun.jpg"
+                                alt="Güneş"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="cosmic-overlay"></div>
+
+                        <div class="cosmic-content">
+
+                            <div class="cosmic-top">
+
+                                <span class="cosmic-number">
+                                    01
+                                </span>
+
+                                <span class="cosmic-badge">
+                                    Orta Büyüklükte Yıldız
+                                </span>
+
+                            </div>
+
+                            <div class="cosmic-bottom">
+
+                                <div>
+                                    <span class="mini-label">
+                                        YILDIZIMIZ
+                                    </span>
+
+                                    <h3>Güneş</h3>
+
+                                    <p>
+                                        Güneş, Dünya'ya en yakın yıldızdır.
+                                        Güneş Sistemi'nin merkezinde bulunur
+                                        ve gezegenlerimizin temel enerji
+                                        kaynağıdır.
+                                    </p>
+                                </div>
+
+                                <span class="cosmic-symbol">
+                                    ☼
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- NEBULA -->
+                    <article class="cosmic-card">
+
+                        <div class="cosmic-image">
+                            <img
+                                src="assets/bulutsu.png"
+                                alt="Bulutsu"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="cosmic-overlay"></div>
+
+                        <div class="cosmic-content">
+
+                            <div class="cosmic-top">
+
+                                <span class="cosmic-number">
+                                    02
+                                </span>
+
+                                <span class="cosmic-badge">
+                                    Yıldız Beşiği
+                                </span>
+
+                            </div>
+
+                            <div class="cosmic-bottom">
+
+                                <div>
+                                    <span class="mini-label">
+                                        KOZMİK BULUT
+                                    </span>
+
+                                    <h3>Bulutsu</h3>
+
+                                    <p>
+                                        Bulutsular; gaz, toz ve plazmadan
+                                        oluşan devasa uzay bölgeleridir.
+                                        Bazı bulutsularda yeni yıldızlar
+                                        oluşur.
+                                    </p>
+                                </div>
+
+                                <span class="cosmic-symbol">
+                                    ✦
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- BLACK HOLE -->
+                    <article class="cosmic-card">
+
+                        <div class="cosmic-image">
+                            <img
+                                src="assets/karadelik.jpg"
+                                alt="Kara delik"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="cosmic-overlay"></div>
+
+                        <div class="cosmic-content">
+
+                            <div class="cosmic-top">
+
+                                <span class="cosmic-number">
+                                    03
+                                </span>
+
+                                <span class="cosmic-badge">
+                                    Çekim Devleri
+                                </span>
+
+                            </div>
+
+                            <div class="cosmic-bottom">
+
+                                <div>
+                                    <span class="mini-label">
+                                        GİZEMLİ DEV
+                                    </span>
+
+                                    <h3>Kara Delik</h3>
+
+                                    <p>
+                                        Kara delikler, çekim gücü çok büyük
+                                        olan kozmik yapılardır. Çekimleri
+                                        o kadar güçlüdür ki ışık bile
+                                        onlardan kaçamaz.
+                                    </p>
+                                </div>
+
+                                <span class="cosmic-symbol">
+                                    ◉
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             GALAXIES
+        ================================================== -->
+        <section
+            class="galaxies section-container"
+            id="galaksiler"
+        >
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-kicker">
+                        03 — GALAKSİLER
+                    </span>
+
+                    <h2>
+                        Kozmik
+                        <span>Şehirler</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Milyarlarca yıldız, gaz ve tozun kütle çekimi
+                    ile bir arada bulunduğu dev yapılara galaksi denir.
+                </p>
+
+            </div>
+
+
+            <div class="galaxy-grid">
+
+                <!-- MILKY WAY -->
+                <article class="galaxy-card galaxy-milky reveal-ready">
+
+                    <div class="galaxy-stars"></div>
+
+                    <div class="galaxy-content">
+
+                        <span class="card-label">
+                            GALAKSİ · 01
+                        </span>
+
+                        <h3>Samanyolu</h3>
+
+                        <p>
+                            Güneş Sistemi'nin içinde bulunduğu
+                            çubuklu sarmal galaksidir.
+                        </p>
+
+                        <div class="galaxy-facts">
+                            <span>Çubuklu sarmal</span>
+                            <span>Güneş Sistemi burada</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ANDROMEDA -->
+                <article class="galaxy-card galaxy-andromeda reveal-ready">
+
+                    <div class="galaxy-stars"></div>
+
+                    <div class="galaxy-content">
+
+                        <span class="card-label">
+                            GALAKSİ · 02
+                        </span>
+
+                        <h3>Andromeda</h3>
+
+                        <p>
+                            Samanyolu'na komşu büyük bir sarmal
+                            galaksidir.
+                        </p>
+
+                        <div class="galaxy-facts">
+                            <span>Sarmal galaksi</span>
+                            <span>Samanyolu'nun komşusu</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             QUIZ
+        ================================================== -->
+        <section
+            class="quiz-section section-container"
+            id="quiz"
+        >
+
+            <div class="quiz-header">
+
+                <div>
+                    <span class="section-kicker">
+                        04 — İNTERAKTİF ATÖLYE
+                    </span>
+
+                    <h2>
+                        Kozmik
+                        <span>Bilgi Testi</span>
+                    </h2>
+                </div>
+
+                <div class="quiz-score-mini">
+                    <span>SKOR</span>
+                    <strong id="scoreMini">0 / 4</strong>
+                </div>
+
+            </div>
+
+
+            <div class="quiz-card" id="quizCard">
+
+                <!-- Quiz progress -->
+                <div class="quiz-progress">
+
+                    <div class="progress-info">
+                        <span id="questionNumber">
+                            Soru 1 / 4
+                        </span>
+
+                        <span id="timer">
+                            20s
+                        </span>
+                    </div>
+
+                    <div class="progress-track">
+                        <div
+                            class="progress-bar"
+                            id="progressBar"
+                        ></div>
+                    </div>
+
+                </div>
+
+
+                <!-- Question -->
+                <div class="question-area">
+
+                    <span class="question-label">
+                        SORU
+                    </span>
+
+                    <h3 id="questionText">
+                        Güneş Sistemi'nin merkezinde
+                        hangi gök cismi bulunur?
+                    </h3>
+
+                </div>
+
+
+                <!-- Answers -->
+                <div
+                    class="answers"
+                    id="answers"
+                ></div>
+
+
+                <!-- Feedback -->
+                <div
+                    class="quiz-feedback"
+                    id="quizFeedback"
+                ></div>
+
+            </div>
+
+
+            <!-- Quiz Result -->
+            <div
+                class="quiz-result"
+                id="quizResult"
+                hidden
+            >
+
+                <div class="result-icon">✦</div>
+
+                <span class="result-label">
+                    GÖREV TAMAMLANDI
+                </span>
+
+                <h3 id="resultTitle">
+                    Uzay Kaşifi
+                </h3>
+
+                <div class="result-score">
+                    <strong id="finalScore">0</strong>
+                    <span>/ 4</span>
+                </div>
+
+                <p id="resultDescription">
+                    Evreni keşfetmeye devam et!
+                </p>
+
+                <button
+                    class="button primary-button retry-button"
+                    id="retryQuiz"
+                    type="button"
+                >
+                    Tekrar Dene
+                    <span>↻</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             KNOWLEDGE CARD
+        ================================================== -->
+        <section class="knowledge section-container">
+
+            <div class="knowledge-card reveal-ready">
+
+                <div class="knowledge-icon">
+                    ♫
+                </div>
+
+                <div class="knowledge-content">
+
+                    <span class="section-kicker">
+                        BİLİYOR MUYDUN?
+                    </span>
+
+                    <h2>
+                        Uzayda ses yayılmaz.
+                    </h2>
+
+                    <p>
+                        Ses dalgalarının ilerleyebilmesi için bir ortama
+                        ihtiyaç vardır. Uzayın büyük bölümü boşluk olduğu
+                        için ses, Dünya'daki gibi uzay boşluğunda yayılamaz.
+                    </p>
+
+                </div>
+
+                <div class="orbit-decoration">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+        <footer class="footer section-container">
+
+            <div class="footer-brand">
+                <span class="orbit-logo">
+                    <span></span>
+                </span>
+
+                <span>Obur</span>
+            </div>
+
+            <p>
+                7. Sınıf Fen Bilimleri · Güneş Sistemi ve Ötesi
+            </p>
+
+            <span class="footer-copy">
+                EXPLORE THE UNKNOWN
+            </span>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
